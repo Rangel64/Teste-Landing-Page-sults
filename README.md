@@ -1,7 +1,7 @@
 # Teste-Landing-Page-sults
 
 ## Descrição
-Este projeto é uma landing page criada usando o Visual Studio Code com Spring Boot, Thymeleaf, HTML, CSS, JavaScript e gerenciado pelo Maven. O projeto funciona utilizando o sistema de endpoints e template engine.
+Este projeto é uma landing page criada utilizando Spring Boot, Thymeleaf, HTML, CSS, JavaScript e gerenciado pelo Maven. O projeto funciona utilizando o sistema de endpoints e template engine.
 
 ## Versões de Software
 - **Maven**: 3.9.6
