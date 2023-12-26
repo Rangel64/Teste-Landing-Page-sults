@@ -1,5 +1,5 @@
 # Teste-Landing-Page-sults
-Descrição
+##Descrição
 Este projeto é uma landing page criada usando o Android Studio Code com Spring Boot, Thymeleaf, HTML, CSS, JavaScript e gerenciado pelo Maven. O projeto funciona utilizando o sistema de endpoints e template engine.
 
 Versões de Software
