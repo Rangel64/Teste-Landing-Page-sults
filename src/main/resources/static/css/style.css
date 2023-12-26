@@ -217,19 +217,6 @@ input{
     }
 }
 
-/* @media (min-width: 992px){
-    .col-lg-7{
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
-} */
-
-/* @media (min-width: 768px){
-    .col-md-6{
-        flex: 0 0 50%;
-    max-width: 50%;
-    }
-} */
 
 @media (min-width: 992px){
     .col-lg-5 {
@@ -255,20 +242,13 @@ input{
 }
 
 @media only screen and (min-width: 1024px){
-    /* .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    } */
     .display-principal{
         display: flex;
     }
     .form-contact{
         width: 357.5px;
     }
-    /* .div-form{
-        width: 437.5px;
-    } */
+
     
 }
 
