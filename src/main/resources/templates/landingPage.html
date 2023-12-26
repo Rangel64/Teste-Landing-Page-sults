@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br" layout:decorate="~{layout/layoutpadrao}" xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.thymeleaf.org">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>  
+</head>
+
+<body>
+    
+    <!-- conteudo principal -->
+
+    <main class="container-fluid content">
+
+        <div class="col-md-12 col-lg-12 mx-auto principal success" id="success" > 
+            <div> 
+                <a href="https://www.sults.com.br"> 
+                    <img th:src="@{/images/logo/logo-sults-dark.svg}" alt="Logo da SULTS para fundo claro" style="width: 150px; height: 40.3px;"> 
+                </a> 
+            </div>
+            <div class="gif-box"> 
+                    <p style="color: black; text-align: center; font-size: 24px;" id="response-request"></p>
+                    <img th:src="@{/images/sucess.gif}" alt="Foguete se transformando em um computador" style="width: 324px; height: 243px; margin-left: 10px;" class="display-desktop"> 
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="https://www.sults.com.br" style="font-size: 14px; font-weight: bold; text-decoration:none; color:#00cdac;"> Voltar para o site </a>
+            </div>
+        </div>
+
+        <div class="principal col-md-12  col-lg-12 mx-auto loading img" id="loading">
+            <img th:src="@{/images/firefly2.gif}" alt="Imagem de loading" style="width: 450px; margin-left: 10px;">
+        </div>
+
+        <div class="principal col-md-12  col-lg-12 mx-auto display-principal" id="principal">
+            <div class="col-md-6 col-lg-7 div-form">
+                <form name="form-contact" id="form-contact" novalidate="novalidade" action="#" class="form-contact">
+                    <p class="title" >Criar sua conta do SULTS</p>
+                    <input type="hidden" th:field="${conta.id}">
+                    <div class="form-group">
+                        <label for="nome" class="mb-0 form-label label">Nome:</label>
+                        <input type="text" id="nome" th:field="${conta.nome}" class="form-control bg-1" placeholder="Digite seu nome...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="empresa" class="mb-0 form-label label">Empresa:</label>
+                        <input type="text" id="empresa" th:field="${conta.empresa}" class="form-control bg-1" placeholder="Digite sua empresa..." >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="mb-0 form-label label">Email:</label>
+                        <input type="text" id="email"th:field="${conta.email}" class="form-control bg-1" placeholder="Digite seu email...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="celular" class="mb-0 form-label label">Celular:</label>
+                        <input type="text" id="celular" th:field="${conta.celular}" class="form-control bg-1" placeholder="Digite seu celular...">
+                    </div>
+                    <div id="form-warning-wrapper" class="col-sm-12 boxed" style="padding: 0px; display: none; margin-bottom: 15px;"> 
+                        <div style="background: rgb(255, 154, 68); color: white; padding: 10px; border-radius: 3px; display: flex; align-items: center;"> 
+                            <div id="form-warning-message" style="font-weight: 500; font-size: 14px;">
+                                Informe o seu nome
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-submit">
+                        <input type="submit" value="CONTINUAR" id="enviar" class="btn btn-primary mt-3 input-cadastro" >
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-5 display-desktop right-logo">
+                <div
+                    style="margin: 0 auto; height: 75px; display: flex; justify-content: center; align-content: center; align-items: center; flex-direction: column;">
+                    <img th:src="@{/images/logo/S-SULTS.png}" alt="Logo SULTS para fundo escuro" width="30%">
+                    <img th:src="@{/images/logo/SULTS.png}" alt="Logo SULTS totalmente branca" width="35%" style="margin-top: 25px;">
+                    <h1 class="logo-label">
+                        Uma única conta.
+                        <br>
+                        Todo o SULTS trabalhando para você.
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="principal footer col-md-12  col-lg-12 mx-auto" id="footer">
+            <p class="privacidade">
+                <a href="https://policies.sults.com.br/politica-de-privacidade" target="_blank" style="color: white; font-size: 12px; text-decoration: none;">Politica de privacidade</a>
+            </p>
+            <p class="termos">
+                <a href="https://policies.sults.com.br/termos-de-uso" target="_blank" style="color: white; font-size: 12px; text-decoration: none;">Termos de uso</a>
+            </p>
+        </div>
+    </main>
+
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>
