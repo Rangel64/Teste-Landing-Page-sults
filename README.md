@@ -8,7 +8,7 @@ Este projeto é uma landing page criada utilizando Spring Boot, Thymeleaf, HTML,
 - **Java**: 21.0.1
 
 ## Pré-requisitos
-Para executar o projeto, é necessário instalar as seguintes extensões no Android Studio Code:
+Para executar o projeto, é necessário instalar as seguintes extensões no Visual Studio Code:
 - Spring Initializr Java Support
 - Spring Boot Dashboard
 - Spring Boot Tools
@@ -21,16 +21,16 @@ Para executar o projeto, é necessário instalar as seguintes extensões no Andr
 ## Instruções de Instalação e Execução
 
 ### Instalação de Extensões
-Primeiro, instale todas as extensões listadas acima no Android Studio Code.
+Primeiro, instale todas as extensões listadas acima no Visual Studio Code.
 
 ### Iniciar o Projeto
-- Abra o Android Studio Code.
+- Abra o Visual Studio Code.
 - Localize o ícone "Spring Boot Dashboard" na barra vertical à esquerda da tela.
 - Na seção "Apps", encontre e execute o projeto "landing-page-sults".
 
 ### Acessar a Aplicação
 - Abra um navegador, preferencialmente o Google Chrome (utilizado durante o desenvolvimento).
-- Digite na barra de endereços `localhost:` seguido pela porta que aparecerá no terminal do Android Studio Code.
+- Digite na barra de endereços `localhost:` seguido pela porta que aparecerá no terminal do Visual Studio Code.
 
 ## Funcionalidades
 O objetivo do projeto foi criar uma réplica da landing page original da SULTS, utilizando validações no front-end e back-end para todos os campos do formulário.
